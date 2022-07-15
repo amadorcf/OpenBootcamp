@@ -1,0 +1,5 @@
+mensaje = ("Hola mundo!")
+mensaje = ("Gracias. Hasta pronto!")
+
+print(mensaje)
+print(type(mensaje))
