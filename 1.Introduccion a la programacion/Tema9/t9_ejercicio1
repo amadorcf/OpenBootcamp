@@ -1,0 +1,27 @@
+class Persona:
+
+    def __init__(self, edad, nombre, telefono):
+        self.edad = edad
+        self.nombre = nombre
+        self.telefono = telefono
+
+
+class Cliente(Persona):
+
+    def __init__(self, edad, nombre, telefono, credito):
+        super().__init__(edad, nombre, telefono)
+        self.credito = credito
+
+
+class Trabajador(Persona):
+    def __init__(self, edad, nombre, telefono, salario):
+        super().__init__(edad, nombre, telefono)
+        self.salario = salario
+
+
+cliente1 = Cliente(29, "Paco", 123456789, 100)
+cliente2 = Trabajador(23, "Pepe", 987654321, 1700)
+
+print(f"{cliente1.nombre} tiene un credito de: {cliente1.credito} euros.\n")
+print(f"{cliente2.nombre} tiene un salario igual a: {cliente2.salario} euros.")
+
